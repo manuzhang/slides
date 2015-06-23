@@ -43,7 +43,6 @@ class: middle, center, inverse
 
 # Storm limitations (1/2)
 
-* Multiple levels of scheduling and their complex interaction leads to uncertainty about when tasks are being scheduled.
 * Each worker runs a mix of tasks, making it difficult to reason about the behaviour and performance of a particular task. Logs from multiple tasks are also mixed up in a single file.
 * An unhandled exception in a single task takes down the whole worker process killing other (perfectly fine) tasks.
 * Storm assumes that every worker is homogeneous, which results in inefficient utilization of allocated resources, and often results in over-provisioning.
